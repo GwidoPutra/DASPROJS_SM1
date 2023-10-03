@@ -16,44 +16,44 @@ public class PemilihanPercobaan213 {
         ///String message = total < 65 ? "Remidi" : "Tidak remidi";
         ///System.out.println("Nilai akhir = " + total + " sehingga" + message);
 
-
-        // String message = total < 65 ? "Remidi" : "Tidak remidi";
-        // System.out.println("Nilai akhir = " + total + " sehingga" + message);
-
-        // String predikat;
-        // if (total <= 100 && total > 73) {
-        //     System.out.println("nilai huruf : A");
-        //     System.out.println("nilai setara : 4");
-        //     System.out.println("kualifikasi : Sangat baik");
-        // } else if (total <= 80 && total > 73) {
-        //     System.out.println("nilai huruf : B+");
-        //     System.out.println("nilai setara : 3,5");
-        //     System.out.println("kualifikasi : Baik");
-        // } else if (total <= 73 && total > 65) {
-        //     System.out.println("nilai huruf : B");
-        //     System.out.println("nilai setara : 3");
-        // } else if (total <= 65 && total > 60) {
-        //     System.out.println("nilai huruf : C+");
-
         String predikat;
+        String setara;
+        String kualifikasi;
         if (total <= 100 && total > 80){
             predikat = "A";
+            setara = "4";
+            kualifikasi = "Sangat baik";
         } else if (total <= 80 && total > 73) {
             predikat = "B+";
+            setara = "3.5";
+            kualifikasi = "lebih dari baik";
         } else if (total <= 73 && total > 65) {
             predikat = "B";
+            setara = "3";
+            kualifikasi = "Baik";
         } else if (total <= 65 && total > 60) {
             predikat = "C+";
+            setara = "2.5";
+            kualifikasi = "Lebih dari cukup";
         } else if (total <= 60 && total > 50) {
             predikat = "C";
+            setara = "2";
+            kualifikasi = "Cukup";
         } else if (total <= 50 && total > 39) {
             predikat = "D";
+            setara = "1";
+            kualifikasi = "Kurang";
         } else {
             predikat = "E";
+            setara = "0";
+            kualifikasi = "Gagal";
         }
 
 
-        System.out.println("Nilai total yang didapat :" + total + "Sehingga mendapat predikat" + predikat);
+        System.out.println("Nilai total yang didapat :" + total );
+        System.out.println("Nilai huruf :" + predikat);
+        System.out.println("Nilai setara :" + setara);
+        System.out.println("Kualifikasi :" + kualifikasi);
 
 
     }

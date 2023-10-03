@@ -8,10 +8,7 @@ public class PemilihanPercobaan113 {
 
         String status = (angka % 2 == 0) ? "genap" : "ganjil";
         System.out.println("Angka " + angka + " bilangan " + status);
-      
-        
-        String status = (angka % 2 == 0) ? "genap" : "ganjil";
-        System.out.println("Angka " + angka + " bilangan " + status);
+
 
     }
     
