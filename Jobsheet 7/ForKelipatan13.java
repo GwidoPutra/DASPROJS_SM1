@@ -15,8 +15,7 @@ public class ForKelipatan13 {
                 counter++;
             }
         }
-
-        // Calculate and display the average
+        
         double average = (double) jumlah / counter;
 
         System.out.printf("Banyaknya bilangan %d dari 1 sampai 50 adalah %d\n", kelipatan, counter);
