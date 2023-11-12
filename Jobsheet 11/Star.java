@@ -10,4 +10,4 @@ public class Star {
                 System.out.print("*");
         }
     }
-}
+} 
