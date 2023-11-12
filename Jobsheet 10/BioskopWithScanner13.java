@@ -6,14 +6,14 @@ public class BioskopWithScanner13 {
         int menu, baris, kolom;
         String nama, next;
 
-        String [][] penonton = new String[4][2];
+        String[][] penonton = new String[4][2];
 
         while (true) {
             System.out.println("Menu");
             System.out.println("1. Input data penonton");
             System.out.println("2. Tampilkan daftar penonton");
             System.out.println("3. Exit\n");
-            System.out.println("Pilihan menu : ");
+            System.out.print("Pilihan menu : ");
             menu = sc.nextInt();
 
             if (menu == 1) {
@@ -25,32 +25,32 @@ public class BioskopWithScanner13 {
                     System.out.print("Masukkan kolom : ");
                     kolom = sc.nextInt();
 
-                    if (baris > penonton.length || kolom > penonton[baris-1].length) {
+                    if (baris > penonton.length || kolom > penonton[baris - 1].length) {
                         System.out.println("Kursi tidak tersedia!");
                         continue;
-                    } else if (penonton[baris-1][kolom-1]!=null) {
+                    } else if (penonton[baris - 1][kolom - 1] != null) {
                         System.out.println("Kursi sudah terisi oleh penonton lain!");
                         continue;
                     } else {
-                        penonton[baris-1][kolom-1] = nama;
-                        
+                        penonton[baris - 1][kolom - 1] = nama;
+
                         System.out.print("Input penonton lainnya? (y/n) : ");
                         next = sc.next();
-                        
+
                         if (next.equalsIgnoreCase("n")) {
                             System.out.println("");
                             break;
-                        } 
+                        }
                     }
                 }
             }
-            
+
             if (menu == 2) {
                 System.out.println("");
                 for (int i = 0; i < penonton.length; i++) {
-                    System.out.println("Baris ke-"+(i+1));
+                    System.out.println("Baris ke-" + (i + 1));
                     for (int j = 0; j < penonton[i].length; j++) {
-                        System.out.println("Kolom ke-"+(j+1)+" : "+penonton[i][j] );
+                        System.out.println("Kolom ke-" + (j + 1) + " : " + (penonton[i][j] != null ? penonton[i][j] : "***"));
                     }
                     System.out.println("");
                 }
