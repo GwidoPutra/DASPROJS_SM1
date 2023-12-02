@@ -13,7 +13,12 @@ public class UcapanTerimaKasih_13 {
         System.out.println("Thank you "+nama+" for being the best teacher in the world.\n"+
         "You inspired in me a love for learning and made me feel like I could ask you anything.");
     }
+    public static void UcapanTambahan(String ucapanTambahan) {
+        System.out.println(ucapanTambahan);
+    }
     public static void main(String[] args) {
         UcapanTerimaKasih();
+        ucapanTambahan("Thank you for the patience to guide us to become a better person");
     }
 }
+    
